@@ -10,6 +10,7 @@
     Tamanho da área em m²: <input id="ipt_metrosq" type="number"> <br>
     OU <br>
     Tamanho da área em Hectares: <input id="ipt_hectares" type="number" ><br>
+    Valor de venda do kg do lúpulo peletizado: <input id="ipt_valor"><br>
     <button onclick="Sim()">Já possuo Iluminação Artificial</button>
     <button onclick="Não()">Não possuo Iluminação Artifical</button>
 <div id="div_sim"></div>
@@ -25,7 +26,10 @@
             var AREA = METROS/10000
         }
         var PRODTOP = AREA*3400
-        div_sim.innerHTML = `Parabéns! Mas você ainda pode melhorar! Com o controle correto pode chegar até ${PRODTOP} kg de lúpulo peletizados por ano, com qualidade para deixar até o mais exigente cervejeiro satisfeito!`
+        div_sim.innerHTML = `Parabéns pela produção! Mas você ainda pode melhorar! Com seu controle correto, utilizando os dados disponibilizados pela nossa solução, você pode chegar até ${PRODTOP} kg de lúpulo peletizados por ano, com qualidade para deixar até o mais exigente cervejeiro satisfeito!`
+        var CUSTOKG= Number(ipt_valor.value)
+        var LUCRO= CUSTOKG*PRODTOP
+        div_sim.innerHTML += `<br>Com nossa solução você pode chegar a faturar <b>R$ ${LUCRO}</b> por ano! Entre em contato ou realize o cadastro que nossa equipe entrará em contato com você!`
     }
     function Não(){
         
@@ -34,7 +38,10 @@
                 if (METROS>0){
             var AREA = METROS/10000
         }
-        var PROD = AREA*800
+        var PROD = AREA*2400
         div_sim.innerHTML = `Sua plantação tem o potencial Mínimo podutivo de ${PROD} kgs de lúpulo peletizados por ano! Instale iluminção artificial e com ajuda da HOP_TECH atinja melhores reultados!`
+        var CUSTOKG= Number(ipt_valor.value)
+        var LUCRO= CUSTOKG*PROD
+        div_sim.innerHTML += `<br>Com nossa solução você pode chegar a faturar <b>R$ ${LUCRO}</b> por ano! Entre em contato ou realize o cadastro que nossa equipe entrará em contato com você!`
     }
-</script>
+    </script>
