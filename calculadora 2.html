@@ -5,15 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    Tamanho da área em m²: <input id="ipt_metrosq" type="number"> <br>
-    OU <br>
-    Tamanho da área em Hectares: <input id="ipt_hectares" type="number" ><br>
-    Valor de venda do kg do lúpulo peletizado: <input id="ipt_valor"><br>
-    <button onclick="Sim()">Já possuo Iluminação Artificial</button>
-    <button onclick="Não()">Não possuo Iluminação Artifical</button>
-<div id="div_sim"></div>
+    <div class="caixa_hop">
+        Tamanho da área em m²: 
+        <br>
+        <input id="ipt_metrosq" type="number"> 
+        <br>
+
+        <i>OU</i>
+        <br>
+
+        Tamanho da área em Hectares: 
+        <br>
+        <input id="ipt_hectares" type="number"> 
+        <br>
+    </div>
+
+    <div class="caixa_hop2">
+        Valor de venda do kg do lúpulo peletizado: 
+        <br>
+        <input id="ipt_valor">
+        <br>
+    </div>
+
+    <div class="caixa_hop3">
+        <span>Possui iluminação artificial ?</span> 
+        <br>
+    </div> 
+    <button onclick="Sim()">Sim</button>
+    <button onclick="Não()">Não</button>
+  
+    <div id="div_sim"></div>
        
 </body>
 </html>
@@ -26,10 +50,10 @@
             var AREA = METROS/10000
         }
         var PRODTOP = AREA*3400
-        div_sim.innerHTML = `Parabéns pela produção! Mas você ainda pode melhorar! Com seu controle correto, utilizando os dados disponibilizados pela nossa solução, você pode chegar até ${PRODTOP} kg de lúpulo peletizados por ano, com qualidade para deixar até o mais exigente cervejeiro satisfeito!`
+        div_sim.innerHTML = `<br>Parabéns pela produção! Mas você ainda pode melhorar! Com seu controle correto, utilizando os dados disponibilizados pela nossa solução, você pode chegar até ${PRODTOP} kg de lúpulo paletizados por ano, com qualidade para deixar até o mais exigente cervejeiro satisfeito!`
         var CUSTOKG= Number(ipt_valor.value)
         var LUCRO= CUSTOKG*PRODTOP
-        div_sim.innerHTML += `<br>Com nossa solução você pode chegar a faturar <b>R$ ${LUCRO}</b> por ano! Entre em contato ou realize o cadastro que nossa equipe entrará em contato com você!`
+        div_sim.innerHTML += `<br><br>Com nossa solução você pode chegar a faturar <b>R$ ${LUCRO}</b> por ano! Entre em contato ou realize o cadastro que nossa equipe entrará em contato com você!`
     }
     function Não(){
         
@@ -39,9 +63,9 @@
             var AREA = METROS/10000
         }
         var PROD = AREA*2400
-        div_sim.innerHTML = `Sua plantação tem o potencial Mínimo podutivo de ${PROD} kgs de lúpulo peletizados por ano! Instale iluminção artificial e com ajuda da HOP_TECH atinja melhores reultados!`
+        div_sim.innerHTML = `<br>Sua plantação tem o potencial mínimo podutivo de ${PROD} kg de lúpulo paletizados por ano! Instale iluminção artificial e com ajuda da HOP_TECH atinja melhores resultados!`
         var CUSTOKG= Number(ipt_valor.value)
         var LUCRO= CUSTOKG*PROD
-        div_sim.innerHTML += `<br>Com nossa solução você pode chegar a faturar <b>R$ ${LUCRO}</b> por ano! Entre em contato ou realize o cadastro que nossa equipe entrará em contato com você!`
+        div_sim.innerHTML += `<br><br>Com nossa solução você pode chegar a faturar <b>R$ ${LUCRO}</b> por ano! Entre em contato ou realize o cadastro que nossa equipe entrará em contato com você!`
     }
     </script>
