@@ -34,15 +34,15 @@
         <span>Possui iluminação artificial ?</span> 
         <br>
     </div> 
-    <button onclick="Sim()">Sim</button>
-    <button onclick="Não()">Não</button>
+    <button onclick="Possuir()">Sim</button>
+    <button onclick="NãoPossuir()">Não</button>
   
     <div id="div_sim"></div>
        
 </body>
 </html>
 <script>
-    function Sim(){
+    function Possuir(){
         
         var METROS = Number(ipt_metrosq.value)
         var AREA= Number(ipt_hectares.value)
@@ -55,7 +55,7 @@
         var LUCRO= CUSTOKG*PRODTOP
         div_sim.innerHTML += `<br><br>Com nossa solução você pode chegar a faturar <b>R$ ${LUCRO}</b> por ano! Entre em contato ou realize o cadastro que nossa equipe entrará em contato com você!`
     }
-    function Não(){
+    function NãoPossuir(){
         
         var METROS = Number(ipt_metrosq.value)
         var AREA= Number(ipt_hectares.value)
