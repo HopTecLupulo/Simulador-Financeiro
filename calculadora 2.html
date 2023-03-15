@@ -8,41 +8,45 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="conteiner" id="conteiner">
-        <div class="img"><img src="logo.png"width="110px" height="110px"></div> 
-        <div class="nome">HOP_TECH</div>
-         
-    </div>
-    
-    <div class="caixa_hop">
-        Tamanho da área em m²: 
-        <br>
-        <input id="ipt_metrosq" type="number"> 
-        <br>
-        <i>OU</i>
-        <br>
-        Tamanho da área em Hectares: 
-        <br>
-        <input id="ipt_hectares" type="number"> 
-        <br>
-    </div>
-
-    <div class="caixa_hop2">
-        Valor de venda do kg do lúpulo peletizado: 
-        <br>
-        <input id="ipt_valor" type="number">
-        <br>
-    </div>
-
-    <div class="caixa_hop3">
-        <span>Possui iluminação artificial ?</span><br>
+    <div class="center">
+        <div class="conteiner" id="conteiner">
+            <div class="img"><img src="logo.png"width="90px" height="90px"></div> 
+            <div class="nome">HOP_TECH</div>
+            
+        </div>
         
+        <div class="caixa_hop">
+            Tamanho da área em m²: 
+            <br>
+            <input id="ipt_metrosq" type="number"> 
+            <br>
+            <i>OU</i>
+            <br>
+            Tamanho da área em Hectares: 
+            <br>
+            <input id="ipt_hectares" type="number"> 
+            <br>
+        </div>
+
+        <div class="caixa_hop2">
+            Valor de venda do kg do lúpulo peletizado: 
+            <br>
+            <input id="ipt_valor" type="number">
+            <br>
+        </div>
+
+        <div class="caixa_hop3">
+            <span>Possui iluminação artificial ?</span><br>
+            
+        </div>
+
+        <button onclick="Possuir()">Sim</button>
+        <button onclick="NaoPossuir()">Não</button>
+    
+        <div id="div_sim"></div>
     </div>
 
-    <button onclick="Possuir()">Sim</button>
-    <button onclick="NaoPossuir()">Não</button>
-  
-    <div id="div_sim"></div>
+
        
 </body>
 </html>
