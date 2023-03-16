@@ -7,14 +7,33 @@ body {
 }
 .conteiner
 {
-border-radius: 18px;
+align-items: center;
 background-color: #6DC150;
-padding: 2px;
-height: auto;
+height: 50px;
 width: 100%;
 border: #6DC150 solid;
-display:inline-flex;
-margin: 2px;
+display:flex;
+
+
+}
+.header
+{
+    margin: 0;
+}
+.header .conteiner
+{
+    justify-content: space-between;
+}
+.navbar
+{
+    width: auto;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    list-style: none;
+    height: 60px;
+   margin-right: 20px;
 
 }
 .center{
@@ -22,19 +41,21 @@ margin: 2px;
 }
 .img
 {
+    margin-left: 25px;
+    margin-top: -5pc;
+    padding: 0;
+    width: 10px;
     display: flex;
-    margin: 0;
-    width:120px; 
-    height: 100px;
-    transform: rotate(400deg);
+    transform: rotate(448deg);
 }
+
 .nome
 {
-    font-size: 120%;
-    display: inline-flex;
-    align-items: center;
-    margin-left: -10px;
- 
+    display: flex;
+     width: auto;
+    margin-right: 44%;
+    font-size: 40px;
+    
 }
 
 .caixa_hop {
