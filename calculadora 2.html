@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Simulador Financeiro HOP_TECH®</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="header">
         <div class="conteiner" id="conteiner">
-            <div class="img"><img src="logo.png"width="80px" height="80px"></div> 
+            <div class="img"><img src="logo.png"width="80px" height="80px"></div><br> 
             <div class="nome">HOP_TECH</div>
             <ul class="navbar">
-                <li>Pagina
-                 Inicial|</li> <br>
-                <li>Métricas|</li>
-                <li>Cadastro|</li>
-                <li>Contato</li>
+                <li class="paginaInicial"><a href="#" style="color:green;">Página Inicial|</a></li>
+                <li><a href="#" style="color:green;">Métricas|</a></li>
+                <li><a href="#" style="color:green;">Cadastro|</a></li>
+                <li><a href="#" style="color:green;">Contato</a></li>
             </ul>
         
         </div>
@@ -30,20 +29,20 @@
         <div class="caixa_hop">
             Tamanho da área em m²: 
             <br>
-            <input id="ipt_metrosq" type="number"> 
+            <input id="ipt_metrosq" type="number" placeholder="Tamanho em M²"> 
             <br>
             <i>OU</i>
             <br>
             Tamanho da área em Hectares: 
             <br>
-            <input id="ipt_hectares" type="number"> 
+            <input id="ipt_hectares" type="number" placeholder="Tamanho em Hectares">
             <br>
         </div>
 
         <div class="caixa_hop2">
             Valor de venda do kg do lúpulo peletizado: 
             <br>
-            <input id="ipt_valor" type="number">
+            <input id="ipt_valor" type="number" placeholder="Valor Venda Kg">
             <br>
         </div>
 
@@ -91,7 +90,7 @@
         }
         //====================\\
         var PROD = AREA*2400
-        div_sim.innerHTML = `<br>Sua plantação tem o potencial mínimo podutivo de ${PROD} kg de lúpulo paletizados por ano! Instale iluminção artificial e com ajuda da HOP_TECH atinja melhores resultados!`
+        div_sim.innerHTML = `<br>Sua plantação tem o potencial mínimo podutivo de ${PROD} kg de lúpulo paletizados por ano! Instale iluminção artificial e com ajuda da HOP_TECH® atinja melhores resultados!`
         var LUCRO= CUSTOKG*PROD
         div_sim.innerHTML += `<br><br>Com nossa solução você pode chegar a faturar <b>R$ ${LUCRO}</b> por ano! Entre em contato ou realize o cadastro que nossa equipe entrará em contato com você!`
     }
